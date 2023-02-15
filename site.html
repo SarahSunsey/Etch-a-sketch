@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="button">
+            
+        <div id="colorpick">
+            <div style="color: white; font-family: monospace;
+            background-color: black; font-weight: 900; padding: 20px;
+            margin-bottom: 20px;"> RGBA COLOR CHANGER</div>
+            <input type="range" oninput="getcolor()"  min="0" max="255"  id="red">
+            <input type="range" oninput="getcolor()"  max="255"  id="green">
+            <input type="range" oninput="getcolor()"  min="0" max="255"  id="blue">
+            <input type="range" oninput="getcolor()" value="0.5" min="0"  max="1" step="0.1" id="fade">
+            <div id="rgba"> rgba(128,128,128,0.5)</div>
+        </div>
+        <input type="range" min="1" step="10" max="80" value="0" id="size" onchange="changeSize(this.value)">
+        <button id="reset"> Reset </button>
+        <button id="earasor">erasor</button>
+        <button id="random">Random</button>
+        <button id="rainbow" >RainBow</button>
+        </div>
+        <div id="board" ></div>
+        
+    </div>
+
+<script src="event.js"></script>    
+</body>
+</html>
