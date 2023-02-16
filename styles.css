@@ -1,11 +1,14 @@
+
 body{
     margin: 0px;
     flex-wrap: wrap;
+    background: linear-gradient(to bottom, #a6b5d0, #8d8e93);
 }
 #container{
     margin: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 60px;
 }
 #button{
@@ -27,8 +30,54 @@ body{
 }
 #board {
    display: grid;
-    width: 500px;
-    height: 500px;
-   
+    width: 700px;
+    height: 700px;
+   background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
+button{
+    margin: 10px;
+    padding: 30px;
+    width: 100px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: peachpuff;
+    font-size: larger;
+    width: 150px;
+    
+}
+
+#earasor:hover,#reset:hover,#random:hover,#rainbow:hover{
+    width: 200px;
+    transition: 0.4s;
+}
+.rest:active{
+    background-color: lightpink;
+}
+
+#earasor:focus,#random:focus,#rainbow:focus{
+    width: 200px;
+    transition: 0.4s;
+    background-color: lightpink;
+    
+}
+.sizee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#taille{
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 900;
+    
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    text-shadow:  0 0 20px #bebbb9, 0 0 25px #ffffff, 0 0 30px #d4ae87, 0 0 35px #ffffff;
+
+}

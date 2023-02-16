@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <h1>ETCH-SKETCH</h1>
     <div id="container">
         <div id="button">
             
@@ -21,11 +23,14 @@
             <input type="range" oninput="getcolor()" value="0.5" min="0"  max="1" step="0.1" id="fade">
             <div id="rgba"> rgba(128,128,128,0.5)</div>
         </div>
+        <div class="sizee">
+        <div id="taille"></div>
         <input type="range" min="1" step="10" max="80" value="0" id="size" onchange="changeSize(this.value)">
-        <button id="reset"> Reset </button>
-        <button id="earasor">erasor</button>
-        <button id="random">Random</button>
-        <button id="rainbow" >RainBow</button>
+        </div> 
+        <button id="reset" class="rest"> Reset </button>
+        <button id="earasor" class="erasor">erasor</button>
+        <button id="random" class="random">Random</button>
+        <button id="rainbow" class="rainbow" >RainBow</button>
         </div>
         <div id="board" ></div>
         

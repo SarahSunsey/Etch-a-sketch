@@ -29,7 +29,7 @@ const earasor=document.getElementById("earasor")
 
 
 const reset=document.getElementById("reset")
-
+const taille=document.getElementById("taille");
 
 function populateBoard(size) {
     
@@ -47,6 +47,7 @@ function populateBoard(size) {
       board.appendChild(square)
 
     }
+    taille.innerHTML=size+"x"+size;
     
   }
 
@@ -66,6 +67,8 @@ function populateBoard(size) {
         let gree = Math.floor(Math.random()*256);
         colorpick.style.backgroundColor='rgba('+red +','+green +','+blue +','+fade +')'
     }
+
+
 const random=document.getElementById("random");
     random.addEventListener('click',()=>{
         const rgba=document.getElementById("rgba")
@@ -115,6 +118,7 @@ populateBoard(16)
 function changeSize(input){
 populateBoard(input)
 }
+
 document.querySelectorAll("button:not(#rainbow)").forEach(button => {
     button.addEventListener("click", () => {
     
